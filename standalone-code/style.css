@@ -688,7 +688,48 @@ section {
   padding-top: 2rem;
 }
 
-/* Responsive Media Queries */
+/* Floating WhatsApp Button */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  box-shadow: 0 10px 25px rgba(5, 150, 105, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 35px rgba(5, 150, 105, 0.6);
+}
+
+.floating-whatsapp-btn svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #ffffff;
+}
+
+.floating-whatsapp-pulse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background-color: #34d399;
+  border: 2px solid #070d1e;
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;

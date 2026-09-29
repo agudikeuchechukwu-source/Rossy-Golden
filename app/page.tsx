@@ -14,6 +14,7 @@ import WhyWorkWithMe from '@/components/WhyWorkWithMe';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import StandaloneCodeModal from '@/components/StandaloneCodeModal';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { FileCode, Sparkles } from 'lucide-react';
 
 export default function HomePage() {
@@ -69,8 +70,11 @@ export default function HomePage() {
       {/* 11. Footer */}
       <Footer />
 
-      {/* Floating Standalone Source Code Button for Maryrose */}
-      <div className="fixed bottom-6 right-6 z-40">
+      {/* Floating WhatsApp Contact & Share Widget for 09030763243 */}
+      <FloatingWhatsApp />
+
+      {/* Floating Standalone Source Code Button for Maryrose (positioned on bottom-left) */}
+      <div className="fixed bottom-6 left-6 z-40">
         <button
           type="button"
           onClick={() => setIsCodeModalOpen(true)}
